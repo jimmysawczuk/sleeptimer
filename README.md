@@ -1,5 +1,7 @@
 # sleeptimer
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/jimmysawczuk/sleeptimer)](https://goreportcard.com/report/github.com/jimmysawczuk/sleeptimer)
+
 sleeptimer is a Windows command line version of a program I wrote in college to make my computer shut down, restart or quit certain programs after a set amount of time.
 
 # usage
