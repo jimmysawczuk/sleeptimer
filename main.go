@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"os/exec"
 	"syscall"
 	"time"
 
@@ -58,11 +59,11 @@ func main() {
 }
 
 func shutdown() error {
-	return nil
+	return exec.Command("shutdown", "/s", "/t", "5", "/d", "p:0:0", "/c", "Shutdown initiated by github.com/jimmysawczuk/sleeptimer").Run()
 }
 
 func restart() error {
-	return nil
+	return exec.Command("shutdown", "/r", "/t", "5", "/d", "p:0:0", "/c", "Restart initiated by github.com/jimmysawczuk/sleeptimer").Run()
 }
 
 func blankScreen() error {
